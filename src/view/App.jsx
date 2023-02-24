@@ -16,18 +16,18 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/" className='nav-link'>Home</Link>
+              <Link to="/simple-webapp/" className='nav-link'>Home</Link>
             </Nav>
             <Nav className="me-auto">
-              <Link to="/articles" className='nav-link'>Ver Articulos</Link>
+              <Link to="/simple-webapp/articles" className='nav-link'>Ver Articulos</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <Routes>
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/simple-webapp/articles" element={<Articles />} />
+        <Route path="/simple-webapp/" element={<Home />} />
       </Routes>
     </Router>
   )
